@@ -24,7 +24,8 @@ import java.util.List;
  */
 
 public class TestCaseData extends BaseCase {
-
+//使用ApplicationContextProvider是因为夸方法调用 springboot不能自动注入bean,
+// 需要手动注入，但是如果不需要夸类调用可以自动注入就不需要此方法了
 
     ResponseResultService responseResultService = ApplicationContextProvider.getBean(ResponseResultService.class);
 
