@@ -1,0 +1,1309 @@
+2023-06-12 12:42:04.548  INFO 22932 --- [main] com.czh.automation.api.CaseTest          : Starting CaseTest using Java 1.8.0_66 on DESKTOP-D87CMR3 with PID 22932 (C:\Users\admin\IdeaProjects\test-interface-automation\target\classes started by admin in C:\Users\admin\IdeaProjects\test-interface-automation)
+2023-06-12 12:42:04.550  INFO 22932 --- [main] com.czh.automation.api.CaseTest          : No active profile set, falling back to 1 default profile: "default"
+2023-06-12 12:42:04.898  WARN 22932 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.anheng.daslink.mapper.casemanagement]' package. Please check your configuration.
+2023-06-12 12:42:04.899  WARN 22932 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.anheng.daslink.mapper.querybooks]' package. Please check your configuration.
+2023-06-12 12:42:04.900  WARN 22932 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.anheng.daslink.mapper.responseresult]' package. Please check your configuration.
+2023-06-12 12:42:05.053  WARN 22932 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'caseDataServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+2023-06-12 12:42:05.060  INFO 22932 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-12 12:42:05.090 ERROR 22932 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' in your configuration.
+
+2023-06-12 12:42:05.093 ERROR 22932 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6aaceffd] to prepare test instance [com.czh.automation.api.CaseTest@6236eb5f]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextPrepareTestInstance(AbstractTestNGSpringContextTests.java:149) [spring-test-5.3.20.jar:5.3.20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_66]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_66]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134) [testng-7.1.0.jar:na]
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63) [testng-7.1.0.jar:na]
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348) [testng-7.1.0.jar:na]
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302) [testng-7.1.0.jar:na]
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176) [testng-7.1.0.jar:na]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122) [testng-7.1.0.jar:na]
+	at java.util.ArrayList.forEach(ArrayList.java:1249) ~[na:1.8.0_66]
+	at org.testng.TestRunner.privateRun(TestRunner.java:766) ~[testng-7.1.0.jar:na]
+	at org.testng.TestRunner.run(TestRunner.java:587) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.runSuites(TestNG.java:1039) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.run(TestNG.java:1007) ~[testng-7.1.0.jar:na]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66) ~[testng-rt.jar:na]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109) ~[testng-rt.jar:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'caseDataServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:132) ~[spring-boot-test-2.7.0.jar:2.7.0]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.20.jar:5.3.20]
+	... 30 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1799) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1355) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329) ~[spring-context-5.3.20.jar:5.3.20]
+	... 46 common frames omitted
+
+2023-06-12 12:42:05.101  INFO 22932 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.czh.automation.casedata.TestCaseData], using SpringBootContextLoader
+2023-06-12 12:42:05.102  INFO 22932 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.czh.automation.casedata.TestCaseData]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-06-12 12:42:05.105  INFO 22932 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7fcff1b9, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@697446d4, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@76adb233, org.springframework.test.context.support.DirtiesContextTestExecutionListener@36074e47, org.springframework.test.context.event.EventPublishingTestExecutionListener@36453307]
+2023-06-12 12:43:27.371  INFO 20404 --- [main] com.czh.automation.api.CaseTest          : Starting CaseTest using Java 1.8.0_66 on DESKTOP-D87CMR3 with PID 20404 (C:\Users\admin\IdeaProjects\test-interface-automation\target\classes started by admin in C:\Users\admin\IdeaProjects\test-interface-automation)
+2023-06-12 12:43:27.373  INFO 20404 --- [main] com.czh.automation.api.CaseTest          : No active profile set, falling back to 1 default profile: "default"
+2023-06-12 12:43:27.688  WARN 20404 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.anheng.daslink.mapper.casemanagement]' package. Please check your configuration.
+2023-06-12 12:43:27.689  WARN 20404 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.anheng.daslink.mapper.querybooks]' package. Please check your configuration.
+2023-06-12 12:43:27.691  WARN 20404 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.anheng.daslink.mapper.responseresult]' package. Please check your configuration.
+2023-06-12 12:43:27.845  WARN 20404 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'caseDataServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+2023-06-12 12:43:27.851  INFO 20404 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-12 12:43:27.878 ERROR 20404 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' in your configuration.
+
+2023-06-12 12:43:27.882 ERROR 20404 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@e4487af] to prepare test instance [com.czh.automation.api.CaseTest@394a2528]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextPrepareTestInstance(AbstractTestNGSpringContextTests.java:149) [spring-test-5.3.20.jar:5.3.20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_66]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_66]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134) [testng-7.1.0.jar:na]
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63) [testng-7.1.0.jar:na]
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348) [testng-7.1.0.jar:na]
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302) [testng-7.1.0.jar:na]
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176) [testng-7.1.0.jar:na]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122) [testng-7.1.0.jar:na]
+	at java.util.ArrayList.forEach(ArrayList.java:1249) ~[na:1.8.0_66]
+	at org.testng.TestRunner.privateRun(TestRunner.java:766) ~[testng-7.1.0.jar:na]
+	at org.testng.TestRunner.run(TestRunner.java:587) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.runSuites(TestNG.java:1039) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.run(TestNG.java:1007) ~[testng-7.1.0.jar:na]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66) ~[testng-rt.jar:na]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109) ~[testng-rt.jar:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'caseDataServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:132) ~[spring-boot-test-2.7.0.jar:2.7.0]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.20.jar:5.3.20]
+	... 30 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1799) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1355) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329) ~[spring-context-5.3.20.jar:5.3.20]
+	... 46 common frames omitted
+
+2023-06-12 12:43:27.890  INFO 20404 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.czh.automation.casedata.TestCaseData], using SpringBootContextLoader
+2023-06-12 12:43:27.891  INFO 20404 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.czh.automation.casedata.TestCaseData]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-06-12 12:43:27.894  INFO 20404 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@66d57c1b, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@27494e46, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@d59970a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1e411d81, org.springframework.test.context.event.EventPublishingTestExecutionListener@53b98ff6]
+2023-06-12 12:44:42.074  INFO 10492 --- [main] c.czh.automation.AutomationApplication   : Starting AutomationApplication using Java 1.8.0_66 on DESKTOP-D87CMR3 with PID 10492 (C:\Users\admin\IdeaProjects\test-interface-automation\target\classes started by admin in C:\Users\admin\IdeaProjects\test-interface-automation)
+2023-06-12 12:44:42.076  INFO 10492 --- [main] c.czh.automation.AutomationApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-06-12 12:44:42.321  WARN 10492 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.anheng.daslink.mapper.casemanagement]' package. Please check your configuration.
+2023-06-12 12:44:42.322  WARN 10492 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.anheng.daslink.mapper.querybooks]' package. Please check your configuration.
+2023-06-12 12:44:42.322  WARN 10492 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.anheng.daslink.mapper.responseresult]' package. Please check your configuration.
+2023-06-12 12:44:42.416  INFO 10492 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.czh.automation.api.TestPo], using SpringBootContextLoader
+2023-06-12 12:44:42.416  INFO 10492 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.czh.automation.api.TestPo]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-06-12 12:44:42.430  INFO 10492 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7e809b79, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5cc126dc, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@625e134e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@72bd06ca, org.springframework.test.context.support.DirtiesContextTestExecutionListener@89c10b7, org.springframework.test.context.event.EventPublishingTestExecutionListener@5dbe30be]
+2023-06-12 12:44:42.431  WARN 10492 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testPo' defined in file [C:\Users\admin\IdeaProjects\test-interface-automation\target\classes\com\czh\automation\api\TestPo.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.czh.automation.api.TestPo]: Constructor threw exception; nested exception is java.lang.NullPointerException
+2023-06-12 12:44:42.436  INFO 10492 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-12 12:44:42.472 ERROR 10492 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testPo' defined in file [C:\Users\admin\IdeaProjects\test-interface-automation\target\classes\com\czh\automation\api\TestPo.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.czh.automation.api.TestPo]: Constructor threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-2.7.0.jar:2.7.0]
+	at com.czh.automation.AutomationApplication.main(AutomationApplication.java:13) [classes/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.czh.automation.api.TestPo]: Constructor threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-5.3.20.jar:5.3.20]
+	... 16 common frames omitted
+Caused by: java.lang.NullPointerException: null
+	at com.czh.automation.util.ApplicationContextProvider.getBean(ApplicationContextProvider.java:56) ~[classes/:na]
+	at com.czh.automation.api.TestPo.<init>(TestPo.java:28) ~[classes/:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_66]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_66]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_66]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) ~[na:1.8.0_66]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211) ~[spring-beans-5.3.20.jar:5.3.20]
+	... 18 common frames omitted
+
+2023-06-12 12:46:24.002  INFO 19568 --- [main] c.czh.automation.AutomationApplication   : Starting AutomationApplication using Java 1.8.0_66 on DESKTOP-D87CMR3 with PID 19568 (C:\Users\admin\IdeaProjects\test-interface-automation\target\classes started by admin in C:\Users\admin\IdeaProjects\test-interface-automation)
+2023-06-12 12:46:24.004  INFO 19568 --- [main] c.czh.automation.AutomationApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-06-12 12:46:24.245  WARN 19568 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.anheng.daslink.mapper.casemanagement]' package. Please check your configuration.
+2023-06-12 12:46:24.246  WARN 19568 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.anheng.daslink.mapper.querybooks]' package. Please check your configuration.
+2023-06-12 12:46:24.246  WARN 19568 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.anheng.daslink.mapper.responseresult]' package. Please check your configuration.
+2023-06-12 12:46:24.342  INFO 19568 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.czh.automation.api.TestPo], using SpringBootContextLoader
+2023-06-12 12:46:24.343  INFO 19568 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.czh.automation.api.TestPo]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-06-12 12:46:24.356  INFO 19568 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4fe89c24, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@55795845, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3d08f3f5, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@119f1f2a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1a1da881, org.springframework.test.context.event.EventPublishingTestExecutionListener@5b970f7]
+2023-06-12 12:46:24.357  WARN 19568 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testPo' defined in file [C:\Users\admin\IdeaProjects\test-interface-automation\target\classes\com\czh\automation\api\TestPo.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.czh.automation.api.TestPo]: Constructor threw exception; nested exception is java.lang.NullPointerException
+2023-06-12 12:46:24.363  INFO 19568 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-12 12:46:24.397 ERROR 19568 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testPo' defined in file [C:\Users\admin\IdeaProjects\test-interface-automation\target\classes\com\czh\automation\api\TestPo.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.czh.automation.api.TestPo]: Constructor threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-2.7.0.jar:2.7.0]
+	at com.czh.automation.AutomationApplication.main(AutomationApplication.java:13) [classes/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.czh.automation.api.TestPo]: Constructor threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-5.3.20.jar:5.3.20]
+	... 16 common frames omitted
+Caused by: java.lang.NullPointerException: null
+	at com.czh.automation.util.ApplicationContextProvider.getBean(ApplicationContextProvider.java:56) ~[classes/:na]
+	at com.czh.automation.api.TestPo.<init>(TestPo.java:28) ~[classes/:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_66]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_66]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_66]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) ~[na:1.8.0_66]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211) ~[spring-beans-5.3.20.jar:5.3.20]
+	... 18 common frames omitted
+
+2023-06-12 12:48:51.583  INFO 1900 --- [main] com.czh.automation.TestDemo              : Starting TestDemo using Java 1.8.0_66 on DESKTOP-D87CMR3 with PID 1900 (C:\Users\admin\IdeaProjects\test-interface-automation\target\test-classes started by admin in C:\Users\admin\IdeaProjects\test-interface-automation)
+2023-06-12 12:48:51.584  INFO 1900 --- [main] com.czh.automation.TestDemo              : No active profile set, falling back to 1 default profile: "default"
+2023-06-12 12:48:51.932  WARN 1900 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.anheng.daslink.mapper.casemanagement]' package. Please check your configuration.
+2023-06-12 12:48:51.933  WARN 1900 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.anheng.daslink.mapper.querybooks]' package. Please check your configuration.
+2023-06-12 12:48:51.933  WARN 1900 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.anheng.daslink.mapper.responseresult]' package. Please check your configuration.
+2023-06-12 12:48:52.071  WARN 1900 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'caseDataServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+2023-06-12 12:48:52.077  INFO 1900 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-12 12:48:52.100 ERROR 1900 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' in your configuration.
+
+2023-06-12 12:48:52.105 ERROR 1900 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@49e5f737] to prepare test instance [com.czh.automation.TestDemo@68567e20]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextPrepareTestInstance(AbstractTestNGSpringContextTests.java:149) [spring-test-5.3.20.jar:5.3.20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_66]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_66]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134) [testng-7.1.0.jar:na]
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63) [testng-7.1.0.jar:na]
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348) [testng-7.1.0.jar:na]
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302) [testng-7.1.0.jar:na]
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176) [testng-7.1.0.jar:na]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122) [testng-7.1.0.jar:na]
+	at java.util.ArrayList.forEach(ArrayList.java:1249) ~[na:1.8.0_66]
+	at org.testng.TestRunner.privateRun(TestRunner.java:766) ~[testng-7.1.0.jar:na]
+	at org.testng.TestRunner.run(TestRunner.java:587) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.runSuites(TestNG.java:1039) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.run(TestNG.java:1007) ~[testng-7.1.0.jar:na]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66) ~[testng-rt.jar:na]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109) ~[testng-rt.jar:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'caseDataServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:132) ~[spring-boot-test-2.7.0.jar:2.7.0]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.20.jar:5.3.20]
+	... 30 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1799) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1355) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329) ~[spring-context-5.3.20.jar:5.3.20]
+	... 46 common frames omitted
+
+2023-06-12 12:49:55.061  INFO 13520 --- [main] c.c.a.AutomationApplicationTests         : Starting AutomationApplicationTests using Java 1.8.0_66 on DESKTOP-D87CMR3 with PID 13520 (started by admin in C:\Users\admin\IdeaProjects\test-interface-automation)
+2023-06-12 12:49:55.063  INFO 13520 --- [main] c.c.a.AutomationApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2023-06-12 12:49:55.351  WARN 13520 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.anheng.daslink.mapper.casemanagement]' package. Please check your configuration.
+2023-06-12 12:49:55.351  WARN 13520 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.anheng.daslink.mapper.querybooks]' package. Please check your configuration.
+2023-06-12 12:49:55.352  WARN 13520 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.anheng.daslink.mapper.responseresult]' package. Please check your configuration.
+2023-06-12 12:49:55.488  WARN 13520 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'caseDataServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+2023-06-12 12:49:55.494  INFO 13520 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-12 12:49:55.517 ERROR 13520 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' in your configuration.
+
+2023-06-12 12:49:55.547  INFO 13520 --- [main] c.c.a.AutomationApplicationTests         : Starting AutomationApplicationTests using Java 1.8.0_66 on DESKTOP-D87CMR3 with PID 13520 (started by admin in C:\Users\admin\IdeaProjects\test-interface-automation)
+2023-06-12 12:49:55.548  INFO 13520 --- [main] c.c.a.AutomationApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2023-06-12 12:49:55.658  WARN 13520 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.anheng.daslink.mapper.casemanagement]' package. Please check your configuration.
+2023-06-12 12:49:55.661  WARN 13520 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.anheng.daslink.mapper.querybooks]' package. Please check your configuration.
+2023-06-12 12:49:55.662  WARN 13520 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.anheng.daslink.mapper.responseresult]' package. Please check your configuration.
+2023-06-12 12:49:55.708  WARN 13520 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'caseDataServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+2023-06-12 12:49:55.711  INFO 13520 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-12 12:49:55.713 ERROR 13520 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' in your configuration.
+
+2023-06-12 12:49:55.716 ERROR 13520 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7e057f43] to prepare test instance [com.czh.automation.AutomationApplicationTests@6f204a1a]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43) ~[spring-boot-test-autoconfigure-2.7.0.jar:2.7.0]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) [spring-test-5.3.20.jar:5.3.20]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363) [junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368) [junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363) [junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[na:1.8.0_66]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175) ~[na:1.8.0_66]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1374) ~[na:1.8.0_66]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481) ~[na:1.8.0_66]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471) ~[na:1.8.0_66]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312) ~[na:1.8.0_66]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:743) ~[na:1.8.0_66]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:742) ~[na:1.8.0_66]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580) ~[na:1.8.0_66]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362) [junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283) [junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282) [junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272) [junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.util.Optional.orElseGet(Optional.java:267) ~[na:1.8.0_66]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271) [junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1249) ~[na:1.8.0_66]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1249) ~[na:1.8.0_66]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:71) ~[junit5-rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53) ~[junit-rt.jar:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'caseDataServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:132) ~[spring-boot-test-2.7.0.jar:2.7.0]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.20.jar:5.3.20]
+	... 70 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1799) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1355) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329) ~[spring-context-5.3.20.jar:5.3.20]
+	... 86 common frames omitted
+
+2023-06-12 12:50:58.734  INFO 24784 --- [main] c.czh.automation.AutomationApplication   : Starting AutomationApplication using Java 1.8.0_66 on DESKTOP-D87CMR3 with PID 24784 (C:\Users\admin\IdeaProjects\test-interface-automation\target\classes started by admin in C:\Users\admin\IdeaProjects\test-interface-automation)
+2023-06-12 12:50:58.737  INFO 24784 --- [main] c.czh.automation.AutomationApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-06-12 12:50:59.047  WARN 24784 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.anheng.daslink.mapper.casemanagement]' package. Please check your configuration.
+2023-06-12 12:50:59.048  WARN 24784 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.anheng.daslink.mapper.querybooks]' package. Please check your configuration.
+2023-06-12 12:50:59.048  WARN 24784 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.anheng.daslink.mapper.responseresult]' package. Please check your configuration.
+2023-06-12 12:50:59.182  INFO 24784 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.czh.automation.api.TestPo], using SpringBootContextLoader
+2023-06-12 12:50:59.183  INFO 24784 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.czh.automation.api.TestPo]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-06-12 12:50:59.201  INFO 24784 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4fe89c24, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@55795845, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3d08f3f5, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@119f1f2a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1a1da881, org.springframework.test.context.event.EventPublishingTestExecutionListener@5b970f7]
+2023-06-12 12:50:59.202  WARN 24784 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testPo' defined in file [C:\Users\admin\IdeaProjects\test-interface-automation\target\classes\com\czh\automation\api\TestPo.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.czh.automation.api.TestPo]: Constructor threw exception; nested exception is java.lang.NullPointerException
+2023-06-12 12:50:59.208  INFO 24784 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-12 12:50:59.245 ERROR 24784 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testPo' defined in file [C:\Users\admin\IdeaProjects\test-interface-automation\target\classes\com\czh\automation\api\TestPo.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.czh.automation.api.TestPo]: Constructor threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-2.7.0.jar:2.7.0]
+	at com.czh.automation.AutomationApplication.main(AutomationApplication.java:13) [classes/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.czh.automation.api.TestPo]: Constructor threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-5.3.20.jar:5.3.20]
+	... 16 common frames omitted
+Caused by: java.lang.NullPointerException: null
+	at com.czh.automation.util.ApplicationContextProvider.getBean(ApplicationContextProvider.java:56) ~[classes/:na]
+	at com.czh.automation.api.TestPo.<init>(TestPo.java:28) ~[classes/:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_66]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_66]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_66]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) ~[na:1.8.0_66]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211) ~[spring-beans-5.3.20.jar:5.3.20]
+	... 18 common frames omitted
+
+2023-06-12 12:53:30.839  INFO 14220 --- [main] com.czh.automation.api.CaseTest          : Starting CaseTest using Java 1.8.0_66 on DESKTOP-D87CMR3 with PID 14220 (C:\Users\admin\IdeaProjects\test-interface-automation\target\classes started by admin in C:\Users\admin\IdeaProjects\test-interface-automation)
+2023-06-12 12:53:30.841  INFO 14220 --- [main] com.czh.automation.api.CaseTest          : No active profile set, falling back to 1 default profile: "default"
+2023-06-12 12:53:31.123  WARN 14220 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.anheng.daslink.mapper.casemanagement]' package. Please check your configuration.
+2023-06-12 12:53:31.124  WARN 14220 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.anheng.daslink.mapper.querybooks]' package. Please check your configuration.
+2023-06-12 12:53:31.125  WARN 14220 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.anheng.daslink.mapper.responseresult]' package. Please check your configuration.
+2023-06-12 12:53:31.263  WARN 14220 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'caseDataServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+2023-06-12 12:53:31.269  INFO 14220 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-12 12:53:31.291 ERROR 14220 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' in your configuration.
+
+2023-06-12 12:53:31.294 ERROR 14220 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@e4487af] to prepare test instance [com.czh.automation.api.CaseTest@394a2528]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextPrepareTestInstance(AbstractTestNGSpringContextTests.java:149) [spring-test-5.3.20.jar:5.3.20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_66]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_66]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134) [testng-7.1.0.jar:na]
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63) [testng-7.1.0.jar:na]
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348) [testng-7.1.0.jar:na]
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302) [testng-7.1.0.jar:na]
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176) [testng-7.1.0.jar:na]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122) [testng-7.1.0.jar:na]
+	at java.util.ArrayList.forEach(ArrayList.java:1249) ~[na:1.8.0_66]
+	at org.testng.TestRunner.privateRun(TestRunner.java:766) ~[testng-7.1.0.jar:na]
+	at org.testng.TestRunner.run(TestRunner.java:587) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.runSuites(TestNG.java:1039) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.run(TestNG.java:1007) ~[testng-7.1.0.jar:na]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66) ~[testng-rt.jar:na]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109) ~[testng-rt.jar:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'caseDataServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:132) ~[spring-boot-test-2.7.0.jar:2.7.0]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.20.jar:5.3.20]
+	... 30 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1799) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1355) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329) ~[spring-context-5.3.20.jar:5.3.20]
+	... 46 common frames omitted
+
+2023-06-12 12:53:31.301  INFO 14220 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.czh.automation.casedata.TestCaseData], using SpringBootContextLoader
+2023-06-12 12:53:31.302  INFO 14220 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.czh.automation.casedata.TestCaseData]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-06-12 12:53:31.306  INFO 14220 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@53b98ff6, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3e6fd0b9, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@7fcff1b9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@697446d4, org.springframework.test.context.event.EventPublishingTestExecutionListener@76adb233]
+2023-06-12 12:55:30.171  INFO 25248 --- [main] com.czh.automation.api.CaseTest          : Starting CaseTest using Java 1.8.0_66 on DESKTOP-D87CMR3 with PID 25248 (C:\Users\admin\IdeaProjects\test-interface-automation\target\classes started by admin in C:\Users\admin\IdeaProjects\test-interface-automation)
+2023-06-12 12:55:30.173  INFO 25248 --- [main] com.czh.automation.api.CaseTest          : No active profile set, falling back to 1 default profile: "default"
+2023-06-12 12:55:30.470  WARN 25248 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.anheng.daslink.mapper.casemanagement]' package. Please check your configuration.
+2023-06-12 12:55:30.471  WARN 25248 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.anheng.daslink.mapper.querybooks]' package. Please check your configuration.
+2023-06-12 12:55:30.472  WARN 25248 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.anheng.daslink.mapper.responseresult]' package. Please check your configuration.
+2023-06-12 12:55:30.609  WARN 25248 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'caseDataServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+2023-06-12 12:55:30.615  INFO 25248 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-12 12:55:30.636 ERROR 25248 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' in your configuration.
+
+2023-06-12 12:55:30.640 ERROR 25248 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6aaceffd] to prepare test instance [com.czh.automation.api.CaseTest@6236eb5f]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextPrepareTestInstance(AbstractTestNGSpringContextTests.java:149) [spring-test-5.3.20.jar:5.3.20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_66]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_66]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134) [testng-7.1.0.jar:na]
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63) [testng-7.1.0.jar:na]
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348) [testng-7.1.0.jar:na]
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302) [testng-7.1.0.jar:na]
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176) [testng-7.1.0.jar:na]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122) [testng-7.1.0.jar:na]
+	at java.util.ArrayList.forEach(ArrayList.java:1249) ~[na:1.8.0_66]
+	at org.testng.TestRunner.privateRun(TestRunner.java:766) ~[testng-7.1.0.jar:na]
+	at org.testng.TestRunner.run(TestRunner.java:587) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.runSuites(TestNG.java:1039) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.run(TestNG.java:1007) ~[testng-7.1.0.jar:na]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66) ~[testng-rt.jar:na]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109) ~[testng-rt.jar:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'caseDataServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:132) ~[spring-boot-test-2.7.0.jar:2.7.0]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.20.jar:5.3.20]
+	... 30 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1799) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1355) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329) ~[spring-context-5.3.20.jar:5.3.20]
+	... 46 common frames omitted
+
+2023-06-12 12:55:30.648  INFO 25248 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.czh.automation.casedata.TestCaseData], using SpringBootContextLoader
+2023-06-12 12:55:30.648  INFO 25248 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.czh.automation.casedata.TestCaseData]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-06-12 12:55:30.652  INFO 25248 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7dcc91fd, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@66eb985d, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6a9287b1, org.springframework.test.context.support.DirtiesContextTestExecutionListener@75504cef, org.springframework.test.context.event.EventPublishingTestExecutionListener@6c8a68c1]
+2023-06-12 12:59:07.587  INFO 26188 --- [main] com.czh.automation.api.CaseTest          : Starting CaseTest using Java 1.8.0_66 on DESKTOP-D87CMR3 with PID 26188 (C:\Users\admin\IdeaProjects\test-interface-automation\target\classes started by admin in C:\Users\admin\IdeaProjects\test-interface-automation)
+2023-06-12 12:59:07.588  INFO 26188 --- [main] com.czh.automation.api.CaseTest          : No active profile set, falling back to 1 default profile: "default"
+2023-06-12 12:59:07.877  WARN 26188 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.anheng.daslink.mapper.casemanagement]' package. Please check your configuration.
+2023-06-12 12:59:07.877  WARN 26188 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.anheng.daslink.mapper.querybooks]' package. Please check your configuration.
+2023-06-12 12:59:07.878  WARN 26188 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.anheng.daslink.mapper.responseresult]' package. Please check your configuration.
+2023-06-12 12:59:08.023  WARN 26188 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'caseDataServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+2023-06-12 12:59:08.030  INFO 26188 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-12 12:59:08.054 ERROR 26188 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' in your configuration.
+
+2023-06-12 12:59:08.057 ERROR 26188 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@e4487af] to prepare test instance [com.czh.automation.api.CaseTest@394a2528]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextPrepareTestInstance(AbstractTestNGSpringContextTests.java:149) [spring-test-5.3.20.jar:5.3.20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_66]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_66]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134) [testng-7.1.0.jar:na]
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63) [testng-7.1.0.jar:na]
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348) [testng-7.1.0.jar:na]
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302) [testng-7.1.0.jar:na]
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176) [testng-7.1.0.jar:na]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122) [testng-7.1.0.jar:na]
+	at java.util.ArrayList.forEach(ArrayList.java:1249) ~[na:1.8.0_66]
+	at org.testng.TestRunner.privateRun(TestRunner.java:766) ~[testng-7.1.0.jar:na]
+	at org.testng.TestRunner.run(TestRunner.java:587) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.runSuites(TestNG.java:1039) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.run(TestNG.java:1007) ~[testng-7.1.0.jar:na]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66) ~[testng-rt.jar:na]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109) ~[testng-rt.jar:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'caseDataServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:132) ~[spring-boot-test-2.7.0.jar:2.7.0]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.20.jar:5.3.20]
+	... 30 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.czh.automation.mapper.casemanagement.CaseDataMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1799) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1355) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329) ~[spring-context-5.3.20.jar:5.3.20]
+	... 46 common frames omitted
+
+2023-06-12 12:59:08.065  INFO 26188 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.czh.automation.casedata.TestCaseData], using SpringBootContextLoader
+2023-06-12 12:59:08.066  INFO 26188 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.czh.automation.casedata.TestCaseData]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-06-12 12:59:08.069  INFO 26188 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@36453307, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@7dcc91fd, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@66eb985d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6a9287b1, org.springframework.test.context.event.EventPublishingTestExecutionListener@75504cef]
+2023-06-12 13:01:18.593  INFO 19952 --- [main] c.czh.automation.AutomationApplication   : Starting AutomationApplication using Java 1.8.0_66 on DESKTOP-D87CMR3 with PID 19952 (C:\Users\admin\IdeaProjects\test-interface-automation\target\classes started by admin in C:\Users\admin\IdeaProjects\test-interface-automation)
+2023-06-12 13:01:18.595  INFO 19952 --- [main] c.czh.automation.AutomationApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-06-12 13:01:18.947  WARN 19952 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Generic.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2023-06-12 13:01:18.974  INFO 19952 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-12 13:01:18.988 ERROR 19952 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2023-06-12 13:01:29.288  INFO 27036 --- [main] com.czh.automation.api.CaseTest          : Starting CaseTest using Java 1.8.0_66 on DESKTOP-D87CMR3 with PID 27036 (C:\Users\admin\IdeaProjects\test-interface-automation\target\classes started by admin in C:\Users\admin\IdeaProjects\test-interface-automation)
+2023-06-12 13:01:29.290  INFO 27036 --- [main] com.czh.automation.api.CaseTest          : No active profile set, falling back to 1 default profile: "default"
+2023-06-12 13:01:29.762  WARN 27036 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Generic.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2023-06-12 13:01:29.769  INFO 27036 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-12 13:01:29.785 ERROR 27036 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2023-06-12 13:01:29.788 ERROR 27036 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@c86b9e3] to prepare test instance [com.czh.automation.api.CaseTest@7c1e2a9e]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextPrepareTestInstance(AbstractTestNGSpringContextTests.java:149) [spring-test-5.3.20.jar:5.3.20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_66]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_66]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134) [testng-7.1.0.jar:na]
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63) [testng-7.1.0.jar:na]
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348) [testng-7.1.0.jar:na]
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302) [testng-7.1.0.jar:na]
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176) [testng-7.1.0.jar:na]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122) [testng-7.1.0.jar:na]
+	at java.util.ArrayList.forEach(ArrayList.java:1249) ~[na:1.8.0_66]
+	at org.testng.TestRunner.privateRun(TestRunner.java:766) ~[testng-7.1.0.jar:na]
+	at org.testng.TestRunner.run(TestRunner.java:587) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.runSuites(TestNG.java:1039) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.run(TestNG.java:1007) ~[testng-7.1.0.jar:na]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66) ~[testng-rt.jar:na]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109) ~[testng-rt.jar:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Generic.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:132) ~[spring-boot-test-2.7.0.jar:2.7.0]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.20.jar:5.3.20]
+	... 30 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.20.jar:5.3.20]
+	... 48 common frames omitted
+Caused by: org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:182) ~[spring-boot-autoconfigure-2.7.0.jar:2.7.0]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.initializeDataSourceBuilder(DataSourceProperties.java:123) ~[spring-boot-autoconfigure-2.7.0.jar:2.7.0]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Generic.dataSource(DataSourceConfiguration.java:150) ~[spring-boot-autoconfigure-2.7.0.jar:2.7.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_66]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_66]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.20.jar:5.3.20]
+	... 49 common frames omitted
+
+2023-06-12 13:01:29.796  INFO 27036 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.czh.automation.casedata.TestCaseData], using SpringBootContextLoader
+2023-06-12 13:01:29.796  INFO 27036 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.czh.automation.casedata.TestCaseData]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-06-12 13:01:29.800  INFO 27036 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5a9800f8, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@143d9a93, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@40226788, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4159e81b, org.springframework.test.context.event.EventPublishingTestExecutionListener@5b5caf08]
+2023-06-12 13:04:09.000  INFO 19972 --- [main] com.czh.automation.api.CaseTest          : Starting CaseTest using Java 1.8.0_66 on DESKTOP-D87CMR3 with PID 19972 (C:\Users\admin\IdeaProjects\test-interface-automation\target\classes started by admin in C:\Users\admin\IdeaProjects\test-interface-automation)
+2023-06-12 13:04:09.001  INFO 19972 --- [main] com.czh.automation.api.CaseTest          : No active profile set, falling back to 1 default profile: "default"
+2023-06-12 13:04:09.485  WARN 19972 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Generic.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2023-06-12 13:04:09.492  INFO 19972 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-12 13:04:09.508 ERROR 19972 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2023-06-12 13:04:09.512 ERROR 19972 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@c86b9e3] to prepare test instance [com.czh.automation.api.CaseTest@7c1e2a9e]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextPrepareTestInstance(AbstractTestNGSpringContextTests.java:149) [spring-test-5.3.20.jar:5.3.20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_66]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_66]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134) [testng-7.1.0.jar:na]
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63) [testng-7.1.0.jar:na]
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348) [testng-7.1.0.jar:na]
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302) [testng-7.1.0.jar:na]
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176) [testng-7.1.0.jar:na]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122) [testng-7.1.0.jar:na]
+	at java.util.ArrayList.forEach(ArrayList.java:1249) ~[na:1.8.0_66]
+	at org.testng.TestRunner.privateRun(TestRunner.java:766) ~[testng-7.1.0.jar:na]
+	at org.testng.TestRunner.run(TestRunner.java:587) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.runSuites(TestNG.java:1039) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.run(TestNG.java:1007) ~[testng-7.1.0.jar:na]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66) ~[testng-rt.jar:na]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109) ~[testng-rt.jar:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Generic.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:132) ~[spring-boot-test-2.7.0.jar:2.7.0]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.20.jar:5.3.20]
+	... 30 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.20.jar:5.3.20]
+	... 48 common frames omitted
+Caused by: org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:182) ~[spring-boot-autoconfigure-2.7.0.jar:2.7.0]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.initializeDataSourceBuilder(DataSourceProperties.java:123) ~[spring-boot-autoconfigure-2.7.0.jar:2.7.0]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Generic.dataSource(DataSourceConfiguration.java:150) ~[spring-boot-autoconfigure-2.7.0.jar:2.7.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_66]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_66]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.20.jar:5.3.20]
+	... 49 common frames omitted
+
+2023-06-12 13:04:09.519  INFO 19972 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.czh.automation.casedata.TestCaseData], using SpringBootContextLoader
+2023-06-12 13:04:09.520  INFO 19972 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.czh.automation.casedata.TestCaseData]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-06-12 13:04:09.523  INFO 19972 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@400d912a, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@9f6e406, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@7a94b64e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3e6f3bae, org.springframework.test.context.event.EventPublishingTestExecutionListener@12477988]
+2023-06-12 13:05:17.937  INFO 26372 --- [main] com.czh.automation.api.CaseTest          : Starting CaseTest using Java 1.8.0_66 on DESKTOP-D87CMR3 with PID 26372 (C:\Users\admin\IdeaProjects\test-interface-automation\target\classes started by admin in C:\Users\admin\IdeaProjects\test-interface-automation)
+2023-06-12 13:05:17.938  INFO 26372 --- [main] com.czh.automation.api.CaseTest          : No active profile set, falling back to 1 default profile: "default"
+2023-06-12 13:05:18.396  WARN 26372 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Generic.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2023-06-12 13:05:18.401  INFO 26372 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-12 13:05:18.416 ERROR 26372 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2023-06-12 13:05:18.420 ERROR 26372 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@c86b9e3] to prepare test instance [com.czh.automation.api.CaseTest@7c1e2a9e]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextPrepareTestInstance(AbstractTestNGSpringContextTests.java:149) [spring-test-5.3.20.jar:5.3.20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_66]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_66]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134) [testng-7.1.0.jar:na]
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63) [testng-7.1.0.jar:na]
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348) [testng-7.1.0.jar:na]
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302) [testng-7.1.0.jar:na]
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176) [testng-7.1.0.jar:na]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122) [testng-7.1.0.jar:na]
+	at java.util.ArrayList.forEach(ArrayList.java:1249) ~[na:1.8.0_66]
+	at org.testng.TestRunner.privateRun(TestRunner.java:766) ~[testng-7.1.0.jar:na]
+	at org.testng.TestRunner.run(TestRunner.java:587) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53) ~[testng-7.1.0.jar:na]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.runSuites(TestNG.java:1039) ~[testng-7.1.0.jar:na]
+	at org.testng.TestNG.run(TestNG.java:1007) ~[testng-7.1.0.jar:na]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66) ~[testng-rt.jar:na]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109) ~[testng-rt.jar:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Generic.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:132) ~[spring-boot-test-2.7.0.jar:2.7.0]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.20.jar:5.3.20]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.20.jar:5.3.20]
+	... 30 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.20.jar:5.3.20]
+	... 48 common frames omitted
+Caused by: org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:182) ~[spring-boot-autoconfigure-2.7.0.jar:2.7.0]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.initializeDataSourceBuilder(DataSourceProperties.java:123) ~[spring-boot-autoconfigure-2.7.0.jar:2.7.0]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Generic.dataSource(DataSourceConfiguration.java:150) ~[spring-boot-autoconfigure-2.7.0.jar:2.7.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_66]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_66]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.20.jar:5.3.20]
+	... 49 common frames omitted
+
+2023-06-12 13:05:18.426  INFO 26372 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.czh.automation.casedata.TestCaseData], using SpringBootContextLoader
+2023-06-12 13:05:18.426  INFO 26372 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.czh.automation.casedata.TestCaseData]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-06-12 13:05:18.430  INFO 26372 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@40226788, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@4159e81b, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5b5caf08, org.springframework.test.context.support.DirtiesContextTestExecutionListener@23cd4ff2, org.springframework.test.context.event.EventPublishingTestExecutionListener@70807224]
+2023-06-12 13:08:26.044  INFO 24716 --- [main] com.czh.automation.api.CaseTest          : Starting CaseTest using Java 1.8.0_66 on DESKTOP-D87CMR3 with PID 24716 (C:\Users\admin\IdeaProjects\test-interface-automation\target\classes started by admin in C:\Users\admin\IdeaProjects\test-interface-automation)
+2023-06-12 13:08:26.047  INFO 24716 --- [main] com.czh.automation.api.CaseTest          : No active profile set, falling back to 1 default profile: "default"
+2023-06-12 13:08:26.466  INFO 24716 --- [main] com.czh.automation.api.CaseTest          : Started CaseTest in 0.687 seconds (JVM running for 1.441)
+2023-06-12 13:08:26.477  INFO 24716 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.czh.automation.casedata.TestCaseData], using SpringBootContextLoader
+2023-06-12 13:08:26.479  INFO 24716 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.czh.automation.casedata.TestCaseData]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-06-12 13:08:26.483  INFO 24716 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6105f8a3, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@2237bada, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@77e2a6e2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5710768a, org.springframework.test.context.event.EventPublishingTestExecutionListener@199e4c2b]
+2023-06-12 13:11:36.924  INFO 27012 --- [main] com.czh.automation.api.CaseTest          : Starting CaseTest using Java 1.8.0_66 on DESKTOP-D87CMR3 with PID 27012 (C:\Users\admin\IdeaProjects\test-interface-automation\target\classes started by admin in C:\Users\admin\IdeaProjects\test-interface-automation)
+2023-06-12 13:11:36.926  INFO 27012 --- [main] com.czh.automation.api.CaseTest          : No active profile set, falling back to 1 default profile: "default"
+2023-06-12 13:11:37.358  INFO 27012 --- [main] com.czh.automation.api.CaseTest          : Started CaseTest in 0.708 seconds (JVM running for 1.493)
+2023-06-12 13:11:37.368  INFO 27012 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.czh.automation.casedata.TestCaseData], using SpringBootContextLoader
+2023-06-12 13:11:37.369  INFO 27012 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.czh.automation.casedata.TestCaseData]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-06-12 13:11:37.373  INFO 27012 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@30272916, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@5bb3d42d, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5bf61e67, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2c1dc8e, org.springframework.test.context.event.EventPublishingTestExecutionListener@b273a59]
+2023-06-12 13:13:04.588  INFO 17028 --- [main] c.czh.automation.AutomationApplication   : Starting AutomationApplication using Java 1.8.0_66 on DESKTOP-D87CMR3 with PID 17028 (C:\Users\admin\IdeaProjects\test-interface-automation\target\classes started by admin in C:\Users\admin\IdeaProjects\test-interface-automation)
+2023-06-12 13:13:04.590  INFO 17028 --- [main] c.czh.automation.AutomationApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-06-12 13:13:04.928  INFO 17028 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.czh.automation.api.TestPo], using SpringBootContextLoader
+2023-06-12 13:13:04.929  INFO 17028 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.czh.automation.api.TestPo]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-06-12 13:13:04.942  INFO 17028 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@184497d1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@f9d87b, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@6ffab045, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@26fb628, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3e2943ab, org.springframework.test.context.event.EventPublishingTestExecutionListener@70dd7e15]
+2023-06-12 13:13:04.943  WARN 17028 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testPo' defined in file [C:\Users\admin\IdeaProjects\test-interface-automation\target\classes\com\czh\automation\api\TestPo.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.czh.automation.api.TestPo]: Constructor threw exception; nested exception is java.lang.NullPointerException
+2023-06-12 13:13:04.969  INFO 17028 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-12 13:13:04.986 ERROR 17028 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testPo' defined in file [C:\Users\admin\IdeaProjects\test-interface-automation\target\classes\com\czh\automation\api\TestPo.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.czh.automation.api.TestPo]: Constructor threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-2.7.0.jar:2.7.0]
+	at com.czh.automation.AutomationApplication.main(AutomationApplication.java:18) [classes/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.czh.automation.api.TestPo]: Constructor threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-5.3.20.jar:5.3.20]
+	... 16 common frames omitted
+Caused by: java.lang.NullPointerException: null
+	at com.czh.automation.util.ApplicationContextProvider.getBean(ApplicationContextProvider.java:56) ~[classes/:na]
+	at com.czh.automation.api.TestPo.<init>(TestPo.java:28) ~[classes/:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_66]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_66]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_66]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) ~[na:1.8.0_66]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211) ~[spring-beans-5.3.20.jar:5.3.20]
+	... 18 common frames omitted
+
+2023-06-12 13:15:08.748  INFO 28348 --- [main] com.czh.automation.api.CaseTest          : Starting CaseTest using Java 1.8.0_66 on DESKTOP-D87CMR3 with PID 28348 (C:\Users\admin\IdeaProjects\test-interface-automation\target\classes started by admin in C:\Users\admin\IdeaProjects\test-interface-automation)
+2023-06-12 13:15:08.750  INFO 28348 --- [main] com.czh.automation.api.CaseTest          : No active profile set, falling back to 1 default profile: "default"
+2023-06-12 13:15:09.548  INFO 28348 --- [main] com.czh.automation.api.CaseTest          : Started CaseTest in 1.064 seconds (JVM running for 1.804)
+2023-06-12 13:15:09.557  INFO 28348 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.czh.automation.casedata.TestCaseData], using SpringBootContextLoader
+2023-06-12 13:15:09.558  INFO 28348 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.czh.automation.casedata.TestCaseData]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-06-12 13:15:09.561  INFO 28348 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@215a34b4, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@77bd7fe7, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@35d3ab60, org.springframework.test.context.support.DirtiesContextTestExecutionListener@10876a6, org.springframework.test.context.event.EventPublishingTestExecutionListener@71870da7]
+2023-06-12 13:15:09.577  INFO 28348 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-12 13:15:09.686  INFO 28348 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-12 13:15:09.691 DEBUG 28348 --- [main] c.c.a.m.r.R.queryResponseResult          : ==>  Preparing: SELECT success,message,responseData from response_result where remark=? 
+2023-06-12 13:15:09.708 DEBUG 28348 --- [main] c.c.a.m.r.R.queryResponseResult          : ==> Parameters: aaa(String)
+2023-06-12 13:15:09.727 DEBUG 28348 --- [main] c.c.a.m.r.R.queryResponseResult          : <==      Total: 2
+2023-06-12 13:15:09.795  INFO 28348 --- [main] c.czh.automation.util.ReadDataBaseUtil   : 入参数据：[success=aaa, responseData=ccc, message=success]
+2023-06-12 13:15:09.796  INFO 28348 --- [main] c.czh.automation.util.ReadDataBaseUtil   : 入参数据：[success=true, responseData=登陆成功, message=message]
+2023-06-12 13:15:09.808  INFO 28348 --- [main] com.czh.automation.api.CaseTest          : aaacccsuccess
+2023-06-12 13:15:09.813  INFO 28348 --- [main] com.czh.automation.api.CaseTest          : true登陆成功message
+2023-06-12 13:15:09.818  INFO 28348 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-12 13:15:09.824  INFO 28348 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-12 13:16:00.545  INFO 28180 --- [main] com.czh.automation.api.CaseTest          : Starting CaseTest using Java 1.8.0_66 on DESKTOP-D87CMR3 with PID 28180 (C:\Users\admin\IdeaProjects\test-interface-automation\target\classes started by admin in C:\Users\admin\IdeaProjects\test-interface-automation)
+2023-06-12 13:16:00.546  INFO 28180 --- [main] com.czh.automation.api.CaseTest          : No active profile set, falling back to 1 default profile: "default"
+2023-06-12 13:16:01.362  INFO 28180 --- [main] com.czh.automation.api.CaseTest          : Started CaseTest in 1.065 seconds (JVM running for 1.79)
+2023-06-12 13:16:01.371  INFO 28180 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.czh.automation.casedata.TestCaseData], using SpringBootContextLoader
+2023-06-12 13:16:01.372  INFO 28180 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.czh.automation.casedata.TestCaseData]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-06-12 13:16:01.375  INFO 28180 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4e25147a, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@6b68cb27, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@675ffd1d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@56303475, org.springframework.test.context.event.EventPublishingTestExecutionListener@30506c0d]
+2023-06-12 13:16:01.391  INFO 28180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-12 13:16:01.491  INFO 28180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-12 13:16:01.496 DEBUG 28180 --- [main] c.c.a.m.r.R.queryResponseResult          : ==>  Preparing: SELECT success,message,responseData from response_result where remark=? 
+2023-06-12 13:16:01.512 DEBUG 28180 --- [main] c.c.a.m.r.R.queryResponseResult          : ==> Parameters: aaa(String)
+2023-06-12 13:16:01.530 DEBUG 28180 --- [main] c.c.a.m.r.R.queryResponseResult          : <==      Total: 2
+2023-06-12 13:16:01.598  INFO 28180 --- [main] c.czh.automation.util.ReadDataBaseUtil   : 入参数据：[success=aaa, responseData=ccc, message=success]
+2023-06-12 13:16:01.598  INFO 28180 --- [main] c.czh.automation.util.ReadDataBaseUtil   : 入参数据：[success=true, responseData=登陆成功, message=message]
+2023-06-12 13:16:01.609  INFO 28180 --- [main] com.czh.automation.api.CaseTest          : aaacccsuccess
+2023-06-12 13:16:01.613  INFO 28180 --- [main] com.czh.automation.api.CaseTest          : true登陆成功message
+2023-06-12 13:16:01.618  INFO 28180 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-12 13:16:01.624  INFO 28180 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-12 13:18:05.825  INFO 27104 --- [main] c.czh.automation.AutomationApplication   : Starting AutomationApplication using Java 1.8.0_66 on DESKTOP-D87CMR3 with PID 27104 (C:\Users\admin\IdeaProjects\test-interface-automation\target\classes started by admin in C:\Users\admin\IdeaProjects\test-interface-automation)
+2023-06-12 13:18:05.827  INFO 27104 --- [main] c.czh.automation.AutomationApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-06-12 13:18:06.163  INFO 27104 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.czh.automation.api.TestPo], using SpringBootContextLoader
+2023-06-12 13:18:06.163  INFO 27104 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.czh.automation.api.TestPo]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-06-12 13:18:06.176  INFO 27104 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4f936da8, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4215838f, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@452ba1db, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2289aca5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@76a36b71, org.springframework.test.context.event.EventPublishingTestExecutionListener@184497d1]
+2023-06-12 13:18:06.177  WARN 27104 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testPo' defined in file [C:\Users\admin\IdeaProjects\test-interface-automation\target\classes\com\czh\automation\api\TestPo.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.czh.automation.api.TestPo]: Constructor threw exception; nested exception is java.lang.NullPointerException
+2023-06-12 13:18:06.202  INFO 27104 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-12 13:18:06.217 ERROR 27104 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testPo' defined in file [C:\Users\admin\IdeaProjects\test-interface-automation\target\classes\com\czh\automation\api\TestPo.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.czh.automation.api.TestPo]: Constructor threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-2.7.0.jar:2.7.0]
+	at com.czh.automation.AutomationApplication.main(AutomationApplication.java:18) [classes/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.czh.automation.api.TestPo]: Constructor threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-5.3.20.jar:5.3.20]
+	... 16 common frames omitted
+Caused by: java.lang.NullPointerException: null
+	at com.czh.automation.util.ApplicationContextProvider.getBean(ApplicationContextProvider.java:56) ~[classes/:na]
+	at com.czh.automation.api.TestPo.<init>(TestPo.java:28) ~[classes/:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_66]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_66]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_66]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) ~[na:1.8.0_66]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211) ~[spring-beans-5.3.20.jar:5.3.20]
+	... 18 common frames omitted
+
+2023-06-12 13:21:08.385  INFO 26896 --- [main] com.czh.automation.api.TestPo            : Starting TestPo using Java 1.8.0_66 on DESKTOP-D87CMR3 with PID 26896 (C:\Users\admin\IdeaProjects\test-interface-automation\target\classes started by admin in C:\Users\admin\IdeaProjects\test-interface-automation)
+2023-06-12 13:21:08.387  INFO 26896 --- [main] com.czh.automation.api.TestPo            : No active profile set, falling back to 1 default profile: "default"
+2023-06-12 13:21:09.204  INFO 26896 --- [main] com.czh.automation.api.TestPo            : Started TestPo in 1.078 seconds (JVM running for 1.821)
+2023-06-12 13:21:38.268  INFO 28576 --- [main] com.czh.automation.api.TestPo            : Starting TestPo using Java 1.8.0_66 on DESKTOP-D87CMR3 with PID 28576 (C:\Users\admin\IdeaProjects\test-interface-automation\target\classes started by admin in C:\Users\admin\IdeaProjects\test-interface-automation)
+2023-06-12 13:21:38.270  INFO 28576 --- [main] com.czh.automation.api.TestPo            : No active profile set, falling back to 1 default profile: "default"
+2023-06-12 13:21:39.053  INFO 28576 --- [main] com.czh.automation.api.TestPo            : Started TestPo in 1.054 seconds (JVM running for 1.788)
+2023-06-12 13:21:39.085  INFO 28576 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-12 13:21:39.190  INFO 28576 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-12 13:21:39.196 DEBUG 28576 --- [main] c.c.a.m.r.R.queryResponseResult          : ==>  Preparing: SELECT success,message,responseData from response_result where remark=? 
+2023-06-12 13:21:39.213 DEBUG 28576 --- [main] c.c.a.m.r.R.queryResponseResult          : ==> Parameters: 测试(String)
+2023-06-12 13:21:39.233 DEBUG 28576 --- [main] c.c.a.m.r.R.queryResponseResult          : <==      Total: 2
+2023-06-12 13:21:39.309  INFO 28576 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-12 13:21:39.314  INFO 28576 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

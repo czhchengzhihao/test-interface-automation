@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="DASLink">
+    <suite-files>
+        <!--消息中心-->
+        <suite-file path="XmlCollection/test.xml"/>
+
+    </suite-files>
+    <!--生成测试报告-->
+    <listeners>
+        <listener class-name="com.czh.automation.report.ExtentTestReport"/>
+    </listeners>
+</suite>

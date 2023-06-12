@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="测试套件">
+  <!--  <test name="testApi">
+        <classes>
+            <class name="com.czh.automation.api.TestApi"/>
+        </classes>
+    </test>-->
+    <test name="caseTest">
+        <classes>
+            <class name="com.czh.automation.api.CaseTest"/>
+        </classes>
+    </test>
+<!--    <test name="附件上传">
+        <classes>
+            <class name="com.anheng.datacenter.apitest.announcementmanagementapi.AppUploadFile"/>
+        </classes>
+    </test>
+    <test name="新增公告">
+        <classes>
+            <class name="com.anheng.datacenter.apitest.announcementmanagementapi.AppAdd"/>
+        </classes>
+    </test>
+    <test name="取消公告置顶">
+        <classes>
+            <class name="com.anheng.datacenter.apitest.announcementmanagementapi.CancelTop"/>
+        </classes>
+    </test>
+    <test name="公告置顶">
+        <classes>
+            <class name="com.anheng.datacenter.apitest.announcementmanagementapi.AppTop"/>
+        </classes>
+    </test>
+    <test name="公告列表">
+        <classes>
+            <class name="com.anheng.datacenter.apitest.announcementmanagementapi.AppGetAnnouncementList"/>
+        </classes>
+    </test>
+    <test name="获取最大排序号">
+        <classes>
+            <class name="com.anheng.datacenter.apitest.announcementmanagementapi.AppGetMaxSort"/>
+        </classes>
+    </test>
+    <test name="下架公告">
+        <classes>
+            <class name="com.anheng.datacenter.apitest.announcementmanagementapi.AppOff"/>
+        </classes>
+    </test>
+    <test name="获取公告管理详情">
+        <classes>
+            <class name="com.anheng.datacenter.apitest.announcementmanagementapi.AppGetAnnouncementManagement"/>
+        </classes>
+    </test>
+    <test name="修改公告">
+        <classes>
+            <class name="com.anheng.datacenter.apitest.announcementmanagementapi.AppUpdate"/>
+        </classes>
+    </test>
+    <test name="修改公告排序">
+        <classes>
+            <class name="com.anheng.datacenter.apitest.announcementmanagementapi.AppUpdateSort"/>
+        </classes>
+    </test>
+    <test name="上架公告">
+        <classes>
+            <class name="com.anheng.datacenter.apitest.announcementmanagementapi.AppOn"/>
+        </classes>
+    </test>
+    <test name="删除公告">
+        <classes>
+            <class name="com.anheng.datacenter.apitest.announcementmanagementapi.AppDelete"/>
+        </classes>
+    </test>-->
+</suite>

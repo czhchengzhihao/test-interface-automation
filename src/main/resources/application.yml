@@ -1,0 +1,47 @@
+server:
+  port: 8080
+
+#配置数据库连接
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    #数据源1
+    automation:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://localhost:3306/automation?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8
+      username: root
+      password: admin123
+    #数据源2
+    ssmbuild:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://localhost:3306/ssmbuild?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8
+      username: root
+      password: admin123
+    #测试用例存放的数据库
+    casemanagement:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://10.20.121.81:3306/case_management?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8
+      username: root
+      password: admin1233.
+
+logging:
+  #打印sql至控制台
+  level:
+    com.czh.automation.mapper: DEBUG
+
+  pattern:
+    console: "[%d] [%t] [%p] - %c:%L - %m%n"
+    level:
+      root: DEBUG
+
+  file:
+    name: logs/log.log
+
+
+
+
+
+
+
+
+
