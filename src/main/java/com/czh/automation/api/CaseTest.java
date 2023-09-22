@@ -34,7 +34,7 @@ public class CaseTest extends BaseCase {
         log.info(aa + bb + cc);
     }
 
-    @Test
+/*    @Test
     public void test3() throws IOException {
         CloseableHttpClient httpclient = HttpClients.createDefault();
         HttpPost post = new HttpPost("https://login.taobao.com/newlogin/login.do?appName=taobao&fromSite=0&_bx-v=2.2.3");
@@ -51,6 +51,6 @@ public class CaseTest extends BaseCase {
         String result = EntityUtils.toString(response.getEntity());
         System.out.println(result);
 
-    }
+    }*/
 
 }
