@@ -38,6 +38,4 @@ public class AllConstant {
     public static final String HTTPS = "https";
 
 
-
-
 }

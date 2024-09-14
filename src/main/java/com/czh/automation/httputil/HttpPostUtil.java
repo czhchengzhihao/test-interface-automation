@@ -67,7 +67,7 @@ public class HttpPostUtil {
         log.info("接口地址：" + BUNDLE.getString(testUrl) + BUNDLE.getString(interfaceAddress));
         Reporter.log("接口地址：" + BUNDLE.getString(testUrl) + BUNDLE.getString(interfaceAddress), true);
         post.setEntity(new StringEntity(data.toString(), AllConstant.UTF_8));
-        return getPostUtil( post);
+        return getPostUtil(post);
     }
 
 
@@ -130,7 +130,7 @@ public class HttpPostUtil {
         HttpPost post = new HttpPost(BUNDLE.getString(testUrl) + BUNDLE.getString(interfaceAddress));
         log.info("接口地址：" + BUNDLE.getString(testUrl) + BUNDLE.getString(interfaceAddress));
         Reporter.log("接口地址：" + BUNDLE.getString(testUrl) + BUNDLE.getString(interfaceAddress), true);
-        return getPostUtil( post);
+        return getPostUtil(post);
     }
 
 
@@ -170,7 +170,7 @@ public class HttpPostUtil {
      * @Date 17:57 2022/1/15
      * @Param [interfaceAddress, requestHeader, post]
      **/
-    private static JSONObject getPostUtil( HttpPost post) {
+    private static JSONObject getPostUtil(HttpPost post) {
         HttpSetHeader.postSetHeader(post);
         HttpResponseUtil httpClientResponseUtil = new HttpResponseUtil();
         return httpClientResponseUtil.requestExecution(post);

@@ -27,7 +27,7 @@ public class ReadDataBaseUtil {
         for (int i = 0; i < JSONArray.parseArray(data).size(); i++) {
             int j = 0;
             Set<Map.Entry<String, Object>> entries = JSONArray.parseArray(data).getJSONObject(i).entrySet();
-            log.info("入参数据："+entries);
+            log.info("入参数据：" + entries);
             //结果展示数据根据ASCII表中 对应的字母或者数字符号 倒叙排列，此处根据字段名称首字母 倒叙排列
             for (Map.Entry<String, Object> entry : entries) {
                 dataS[i][j++] = entry.getValue();

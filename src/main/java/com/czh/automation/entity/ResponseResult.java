@@ -18,7 +18,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 public class ResponseResult {
 
-    private Integer  id;
+    private Integer id;
     private String success;
     private String message;
     private String responseData;

@@ -25,13 +25,17 @@ public class XbbCase {
     String token = "b15b90abd6d209b04da17e6ac21e95ae";
 
 
-    String conditions = "{\n" +
-            "    \"formId\":4,\n" +
-            "    \"corpid\":\"ding0434d73b09f8fd4e\",\n" +
-            "    \"dataId\": \"15\",\n" +
+ /*   String conditions = "{\n" +
+            "    \"formId\":2,\n" +
+                "    \"corpid\":\"ding0434d73b09f8fd4e\",\n" +
+            "    \"dataId\": \"91082\",\n" +
             "    \"userId\":\"04446648111231604\"\n" +
-            "}";
-
+            "}";*/
+ String conditions = "{\n" +
+         "  \"dataId\": 91082,\n" +
+         "  \"corpid\": \"ding0434d73b09f8fd4e\",\n" +
+         "  \"userId\": \"181401120230821054\"\n" +
+         "}";
 
     @Test
     public void test() throws IOException {
@@ -39,6 +43,7 @@ public class XbbCase {
         CloseableHttpClient client = HttpClients.createDefault();
         HttpPost post = new HttpPost("http://api.xcrm.xxh.dbappsecurity.com.cn/pro/v2/api/customer/detail");
         post.setHeader("sign", getDataSign(JSONObject.parseObject(conditions), token));
+        System.out.println("入参111："+getDataSign(JSONObject.parseObject(conditions), token));
         post.setHeader("Accept", "application/json");
         post.setHeader("Content-Type", "application/json");
         JSONObject parameter = JSONObject.parseObject(conditions);
@@ -49,7 +54,8 @@ public class XbbCase {
         int code = response.getStatusLine().getStatusCode();
         System.out.println("接口响应" + code);
         String result = EntityUtils.toString(response.getEntity());
-        System.out.println(JSONObject.parseObject(result));
+        System.out.println("2222222"+result);
+        System.out.println("111111"+JSONObject.parseObject(result));
 
     }
 

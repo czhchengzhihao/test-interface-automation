@@ -34,7 +34,6 @@ public class TestCaseDemo extends BaseCase {
     }
 
 
-
     @Test
     public void test1() {
         List<ResponseResult> data = responseResultService.queryResponseResult("测试");
@@ -45,7 +44,7 @@ public class TestCaseDemo extends BaseCase {
 
 
     @DataProvider(name = "zz")
-    public  Object[][] zz() {
+    public Object[][] zz() {
         List<ResponseResult> data = responseResultService.queryResponseResult("测试");
         String parameter = JSONObject.toJSONString(data);
         return ReadDataBaseUtil.readDataBase(parameter);
@@ -53,8 +52,6 @@ public class TestCaseDemo extends BaseCase {
 //                {"33","11","22"}
 //        };
     }
-
-
 
 
 }

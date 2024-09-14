@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
  * @author admin
  */
 @SpringBootApplication
-        //(exclude= {DataSourceAutoConfiguration.class})
+//(exclude= {DataSourceAutoConfiguration.class})
 //@ComponentScan("com.czh.automation.mapper")
 
 public class AutomationApplication {
